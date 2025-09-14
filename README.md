@@ -37,3 +37,20 @@ Clone the repository and install dependencies:
 git clone https://github.com/afrzlfaiz/Tokopedia-Scraper.git
 cd Tokopedia-Scraper
 pip install -r requirements.txt
+```
+
+---
+
+## 📖 Usage
+Run the scraper with a keyword of your choice:
+```bash
+python tokopedia.py
+```
+By default, it searches for "work jacket".
+You can modify the keyword in the script:
+```bash
+if __name__ == "__main__":
+    print("Starting Tokopedia scraper...")
+    products = scrape_tokopedia_search(keywords="work jacket")
+```
+
